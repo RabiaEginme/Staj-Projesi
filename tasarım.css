@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Changa',sans-serif;
+
+}
+body
+{
+  /* arka plan rengini ayarladım 
+  geçişli olmasını sağladım linear-gradient ile 
+  ve çizgilerden min-height ile kurtuldum.*/
+  
+  min-height: 100vh ; 
+  background:linear-gradient(#080633,#4b3ec6);
+}
+
+
+.Navbr header
+{
+  /* position: absolute; */
+  /* position: fixed; */
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Navbr header .logo
+{
+  color:#fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Navbr header ul
+{
+  display: flex;
+  justify-content: center; /* Flex özelliğine sahip olan bir kapsayıcının yatay eksende nasıl hizalanacağını ayarlar. Objeler başta mı, ortada mı, sonda mı, aralıklı mı dizileceğine karar vermemizi sağlar. */
+  align-items: center; /* Bu özellik ise justify-content‘in yatay eksende yaptığı şeyleri dikey eksende yapmaya yarar. Yine aynı şekilde hizalama işlemini dikey eksende nasıl yapmamız gerektiğine karar vermemiz gerekmektedir. */
+  
+}
+.Navbr header ul li
+{
+  list-style: none;
+  margin-left: 20px;
+
+}
+
+.Navbr header ul li a
+{
+  text-decoration: none;
+  padding:6px 15px;
+  color:#fff;
+  border-radius: 20px;
+}
+
+.Navbr header ul li a:hover,
+.Navbr header ul li a.active
+{
+  background: #fff;
+  color:#080633;
+
+
+}
+.Navbr hr
+{   
+    size:100px;
+    margin-top:5px;
+    width: 100%;
+    height: 1px;
+    background:white;
+ 
+}
+
+.container
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 85px;
+ 
+  
+
+}
+.acıklama1 {
+  /* position: relative; */
+  right: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 200px 0 200px;
+  margin-top: -200px;
+  width: 50%;
+  height: 300px;
+
+}
+.acıklama1 img:hover
+{
+  opacity: 0.4;
+
+}
+
+
+.acıklama1 .content1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 37.1%;
+  padding: 20px 15px 20px;
+  top: 106.5%;
+  height: 131px;
+  
+  
+} 
+.acıklama2
+{
+  /* left: -100px; */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 200px 0 200px;
+  width: 37%;
+  /* height: 300px; */
+  margin-right: 125px;
+  margin-top: -100px;
+
+}
+.acıklama2 img
+{
+  height: 330px;
+  width: 565px;
+  margin-top: -78.5px;
+}
+
+.acıklama2 .content2
+{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 37.2%;
+  padding: 40px 15px 20px;
+  top: 61.4%;
+  height: 150px;
+}
+.acıklama3
+{
+  /* width: 500px;
+  height: 500px;
+  padding-bottom: -500px; */
+
+
+  position: absolute;
+  bottom: 0; 
+  width: 5%;
+  padding: 40px 15px 20px;
+  top: 85%;
+  height: 100px;
+  margin-left: 145px;
+}
+.acıklama3 img
+{
+  width: 250px;
+  height: 250px;
+}
+
+.acıklama4
+{
+  position: absolute;
+  bottom: 0; 
+  width: 5%;
+  padding: 40px 15px 20px;
+  top: 85%;
+  height: 100px;
+  margin-left: 1110px;
+}
+
+.acıklama4 img
+{
+  width: 250px;
+  height: 250px;
+}
+
+footer
+{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right,#080633,#4b3ec6);
+  color: #fff;
+  padding: 15px 0 15px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 100px;
+
+}
+.row
+{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+.col
+{
+  flex-basis: 25%;
+  padding: 10px;
+  width: 80px;
+  margin-bottom: 30px;
+
+}
+.col h3
+{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id
+{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.col ul li
+{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.col ul li a 
+{
+  text-decoration: none;
+  color: #fff;
+  
+
+}
+.col .social-icons .fab
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  
+
+}
+
+
+/* KAYIT OL SAYFASI İÇİN CSS*/
+.kayıt
+{
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 75px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: -65px;
+ 
+}
+.kayıt form
+{
+  margin-top: 50px;
+  text-align: center;
+}
+.kayıt input
+{
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.kayıt input:focus
+{
+  outline:0;
+  border: 2px solid #fff;
+}
+
+.kayıt button
+{
+ width: 350px;
+ height: 40px;
+ font-size: 15px;
+ background-color: #080633;
+ border: none;
+ color: #fff;
+ margin-top: 20px;
+}
+.kayıt form h1
+{
+  margin-bottom: 30px;
+  color: #fff;
+
+}
+
+
+/* Giriş yap sayfası iççin css kodları.*/
+
+.gırıs
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 75px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: -65px;
+}
+
+.gırıs form
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gırıs input
+{
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.gırıs input:focus
+{
+  outline:0;
+  border: 2px solid #fff;
+}
+.gırıs button
+{
+  width: 350px;
+ height: 40px;
+ font-size: 15px;
+ background-color: #080633;
+ border: none;
+ color: #fff;
+ margin-top: 20px;
+}
+.gırıs form h1
+{
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Kiracıları gir sayfası için css kodları.*/
+
+.kirgir
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 75px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: -65px;
+}
+
+.kirgir form
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.kirgir input
+{
+  /* display: block; */
+  display: flex;
+  width: 665px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  
+}
+.kirgir input:focus
+{
+  outline:0;
+  border: 2px solid #fff;
+}
+/* .kirgir .but
+{
+  width: fit-content;
+  align-items: center;
+  
+} */
+.kirgir button
+{
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #080633;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  
+}
+.kirgir form h1
+{
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+
+/*Kiracılar sayfasının css kodları.*/
+
+.tablo table
+{
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-collapse: collapse;
+  width: 800px;
+  height: 200px;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2); */
+  
+  border-collapse: collapse;
+  height: 500px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 90px;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+
+
+}
+/* .tablo tr
+{
+   geçiş efekti için
+  transition: all .2s ease-in;
+  imleç
+  cursor: pointer;
+} */
+.tablo th,td
+{
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.tablo #baslık
+{
+  background-color: #4b3ec6;
+}
+
+
+/*Daireler sayfasının css kodları.*/
+
+.panel table
+{
+  border-collapse: collapse;
+  height: 100px;
+  width: 1100px;
+  margin: auto;
+  margin-top: 90px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.panel th,td
+{
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.panel #baslik1
+{
+  background-color: #4b3ec6;
+}
+.panel tr td a
+{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  text-decoration:none;
+  color: #fff;
+  
+  
+}
+/* tıklanabilir yazının üzerine gelince sarı oluyor*/
+.panel a:hover
+{
+  color: yellow;
+}
+/* tıklandıktan sonra rengi değişecek*/
+/* .panel a:visited
+{
+  color: #4b3ec6;
+} */
+
+
+
+
+/* Daireleri gir sayfasının css kodları.*/
+
+.dairegir
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 75px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: -65px;
+}
+
+.dairegir form
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.dairegir input
+{
+  /* display: block; */
+  display: flex;
+  width: 665px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  
+}
+.dairegir input:focus
+{
+  outline:0;
+  border: 2px solid #fff;
+}
+/* .dairegir .fileadd
+{
+  text-align: center;
+  color: #4b3ec6;
+} */
+
+.dairegir button
+{
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #080633;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  
+}
+.dairegir form h1
+{
+  margin-bottom: 30px;
+  color: #fff;
+}
